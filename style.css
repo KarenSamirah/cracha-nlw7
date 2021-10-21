@@ -6,7 +6,6 @@ html,
 body {
   --black: hsl(240, 6%, 13%);
   --gray: hsl(240, 9%, 89%);
-
   height: 100%;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -71,7 +70,6 @@ p {
 
 ul {
   margin-top: 4rem;
-
   list-style: none;
   padding: 0;
   display: flex;
