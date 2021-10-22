@@ -23,9 +23,9 @@
           <img src="images/foto.jpg" alt="Foto Pessoal" />
         </div>
 
-        <h1>Karen Samirah</h1>
+        <h1 id="userName">Karen Samirah</h1>
 
-        <a href="https://github.com/KarenSamirah" target="_blank">
+        <a href="https://github.com/user" target="_blank">
           <img src="images/github.svg" alt="Ícone do github" />
           karensamirah
         </a>
@@ -34,31 +34,46 @@
           A developer who seeks knowledge to solve problems and help people.
         </p>
 
-        <ul>
-          <li>
-            <a href="https://www.linkedin.com/in/karen-samirah/" target="_blank"
+        <ul id="socialLinks">
+          <li class="linkedin">
+            <a href="https://www.linkedin.com/in/user/" target="_blank"
               ><img src="images/linkedin.png" alt="ícone do linkedin"
             /></a>
           </li>
-          <li>
-            <a href="https://www.instagram.com/karen.samirah/" target="_blank"
+          <li class="instagram">
+            <a href="https://www.instagram.com/user/" target="_blank"
               ><img src="images/instagram.png" alt="ícone do instagram"
             /></a>
           </li>
-          <li>
-            <a
-              href="https://www.youtube.com/channel/UC1ID5rgaMIgdIXsZyW8vaAQ"
-              target="_blank"
+          <li class="youtube">
+            <a href="https://www.youtube.com/user" target="_blank"
               ><img src="images/youtube.png" alt="ícone do youtube"
             /></a>
           </li>
-          <li>
-            <a href="https://github.com/KarenSamirah" target="_blank"
+          <li class="github">
+            <a href="https://github.com/user" target="_blank"
               ><img src="images/github.png" alt="ícone do github"
             /></a>
           </li>
         </ul>
       </div>
     </main>
+    <script>
+      const LinksSocialMedia = {
+        github: 'KarenSamirah',
+        linkedin: 'karen-samirah',
+        instagram: 'karen.samirah',
+        youtube: 'channel/UC1ID5rgaMIgdIXsZyW8vaAQ'
+      }
+
+      function changeSocialMediaLinks() {
+        for (let li of socialLinks.children) {
+          const social = li.getAttribute('class')
+          li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`
+        }
+      }
+
+      changeSocialMediaLinks()
+    </script>
   </body>
 </html>
