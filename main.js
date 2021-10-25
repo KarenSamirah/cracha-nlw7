@@ -1,6 +1,6 @@
 const LinksSocialMedia = {
   github: 'KarenSamirah',
-  linkedin: 'in/karen-samirah',
+  linkedin: '/in/karen-samirah',
   instagram: 'karen.samirah',
   youtube: 'channel/UC1ID5rgaMIgdIXsZyW8vaAQ'
 }
